@@ -3,3 +3,8 @@
 //   ignoreQueryPrefix: true,
 // }))
 
+const { username, room } = Qs.parse(location.search, {
+  //keep it true to select only the queries
+  ignoreQueryPrefix: true,
+})
+
