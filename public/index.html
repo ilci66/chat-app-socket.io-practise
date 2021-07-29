@@ -11,10 +11,29 @@
   </header>
   <main class="join-main">
     <div>
-      <!-- it sends form information and for my case redirects
+      <!-- it sends form information and in this case redirects
        at the same time -->
       <form action="chat.html">
-  
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            required
+          >
+        </div>
+        <div class="form-control">
+          <label for="room">Choose a room</label>
+          <select name="room" id="room">
+            <option value="fitness">Fitness</option>
+            <option value="camping">Camping</option>
+            <option value="music">Music</option>
+            <option value="art">Art</option>
+            <option value="games">Games</option>
+          </select>
+        </div>
+        <button type="submit">Start Chatting!</button>
       </form>
     </div>
   </main>
